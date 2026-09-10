@@ -4,7 +4,8 @@
   "description": "Supplementary AI tool for Axe-core accessibility checker.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/axe-ally.js"
+    "start": "node bin/axe-ally.js",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -36,5 +37,8 @@
     "commander": "^15.0.0",
     "dotenv": "^17.4.2",
     "playwright": "^1.63.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
   }
 }
