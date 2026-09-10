@@ -1,0 +1,39 @@
+{
+  "name": "axe-ally",
+  "version": "1.0.0",
+  "description": "Supplementary AI tool for Axe-core accessibility checker.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bin/axe-ally.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdwall3r/axe-ally.git"
+  },
+  "keywords": [
+    "accessibility",
+    "a11y",
+    "axe-core",
+    "cli",
+    "ai"
+  ],
+  "author": "Ryan Waller",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "type": "module",
+  "bin": {
+    "axe-ally": "./bin/axe-ally.js"
+  },
+  "bugs": {
+    "url": "https://github.com/rdwall3r/axe-ally/issues"
+  },
+  "homepage": "https://github.com/rdwall3r/axe-ally#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.124.0",
+    "axe-core": "^4.13.0",
+    "commander": "^15.0.0",
+    "playwright": "^1.63.0"
+  }
+}
