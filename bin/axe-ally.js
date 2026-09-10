@@ -1,13 +1,9 @@
 import "dotenv/config";
-import Anthropic from "@anthropic-ai/sdk";
+import { createInterface } from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
 
-const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+const rl = createInterface({ input, output });
+const url = await rl.question("Which URL would you like to scan? ");
+rl.close();
 
-const response = await client.messages.create({
-  model: "claude-haiku-4-5-20251001",
-  max_tokens: 100,
-  messages: [{ role: "user", content: "Say hello in one word." }],
-});
-console.log(response.content);
+console.log(`Scanning: ${url}`);
