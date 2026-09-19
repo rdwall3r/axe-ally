@@ -4,7 +4,9 @@
   "description": "Supplementary AI tool for Axe-core accessibility checker.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node bin/axe-ally.js",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/bin/axe-ally.js",
     "format": "prettier --write ."
   },
   "repository": {
@@ -25,7 +27,7 @@
   },
   "type": "module",
   "bin": {
-    "axe-ally": "./bin/axe-ally.js"
+    "axe-ally": "./dist/bin/axe-ally.js"
   },
   "bugs": {
     "url": "https://github.com/rdwall3r/axe-ally/issues"
@@ -39,6 +41,8 @@
     "playwright": "^1.63.0"
   },
   "devDependencies": {
-    "prettier": "^3.9.6"
+    "@types/node": "^26.6.2",
+    "prettier": "^3.9.6",
+    "typescript": "^7.0.2"
   }
 }

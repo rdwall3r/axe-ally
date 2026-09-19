@@ -1,7 +1,7 @@
 import { chromium } from 'playwright';
-import AxeBuilder from '@axe-core/playwright';
+import { AxeBuilder } from '@axe-core/playwright';
 
-export const scanUrl = async (url) => {
+export const scanUrl = async (url: string) => {
   const browser = await chromium.launch();
 
   try {

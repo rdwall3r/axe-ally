@@ -1,5 +1,5 @@
-export const normalizeUrl = (input) => {
-  let url;
+export const normalizeUrl = (input: string): string => {
+  let url: URL | undefined;
 
   try {
     url = new URL(input);
