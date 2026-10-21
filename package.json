@@ -7,7 +7,8 @@
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/bin/axe-ally.js",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "try:lens": "node --env-file=.env lib/screen-reader-lens.ts"
   },
   "repository": {
     "type": "git",
