@@ -13,3 +13,9 @@ export const normalizeUrl = (input: string): string => {
 
   return url.href;
 };
+
+// JSON.stringify leaves "<" intact, so page HTML could otherwise close the XML
+// tag that wraps it in the prompt and pass its text off as instructions. The
+// escaped form is still the same JSON value.
+export const toPromptJson = (value: unknown): string =>
+  JSON.stringify(value).replaceAll('<', '\\u003c');

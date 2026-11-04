@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Supplementary AI tool for Axe-core accessibility checker.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npm run build && node --test dist/lib/*.test.js",
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/bin/axe-ally.js",
@@ -23,7 +23,7 @@
   "author": "Ryan Waller",
   "license": "MIT",
   "engines": {
-    "node": ">=18"
+    "node": ">=22"
   },
   "type": "module",
   "bin": {
@@ -36,7 +36,6 @@
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",
     "@axe-core/playwright": "^4.13.0",
-    "commander": "^15.0.0",
     "dotenv": "^17.4.2",
     "playwright": "^1.63.0"
   },
