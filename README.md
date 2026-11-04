@@ -1,10 +1,10 @@
-# axe-ally
+# a11y-llm-scanner
 
 A command-line tool that scans a web page with [axe-core](https://github.com/dequelabs/axe-core), then uses Claude to explain the results from a screen reader user's point of view.
 
 ## Why
 
-Axe tells you which accessibility rules a page breaks. It doesn't tell you what that's like for the person using the page. axe-ally adds that layer:
+Axe tells you which accessibility rules a page breaks. It doesn't tell you what that's like for the person using the page. a11y-llm-scanner adds that layer:
 
 - **What the user actually experiences**, such as hearing "button" with nothing after it.
 - **How to fix it**, most severe first.
@@ -16,8 +16,8 @@ Axe tells you which accessibility rules a page breaks. It doesn't tell you what 
 You'll need Node.js 22 or later (developed and tested on Node 25), and an [Anthropic API key](https://platform.claude.com/) if you want the Claude analysis.
 
 ```sh
-git clone https://github.com/rdwall3r/axe-ally.git
-cd axe-ally
+git clone https://github.com/rdwall3r/a11y-llm-scanner.git
+cd a11y-llm-scanner
 npm install
 npx playwright install chromium
 cp .env.example .env
@@ -88,3 +88,7 @@ npm run format  # format with Prettier
 ## License
 
 [MIT](LICENSE)
+
+## Trademarks
+
+axe® and axe-core® are trademarks of Deque Systems, Inc. in the US and other countries. This project is not affiliated with or endorsed by Deque.

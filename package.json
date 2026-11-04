@@ -1,17 +1,17 @@
 {
-  "name": "axe-ally",
+  "name": "a11y-llm-scanner",
   "version": "0.1.0",
   "description": "Supplementary AI tool for Axe-core accessibility checker.",
   "scripts": {
     "test": "npm run build && node --test dist/lib/*.test.js",
     "build": "tsc",
     "prestart": "npm run build",
-    "start": "node dist/bin/axe-ally.js",
+    "start": "node dist/bin/a11y-llm-scanner.js",
     "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rdwall3r/axe-ally.git"
+    "url": "git+https://github.com/rdwall3r/a11y-llm-scanner.git"
   },
   "keywords": [
     "accessibility",
@@ -27,12 +27,12 @@
   },
   "type": "module",
   "bin": {
-    "axe-ally": "./dist/bin/axe-ally.js"
+    "a11y-llm-scanner": "./dist/bin/a11y-llm-scanner.js"
   },
   "bugs": {
-    "url": "https://github.com/rdwall3r/axe-ally/issues"
+    "url": "https://github.com/rdwall3r/a11y-llm-scanner/issues"
   },
-  "homepage": "https://github.com/rdwall3r/axe-ally#readme",
+  "homepage": "https://github.com/rdwall3r/a11y-llm-scanner#readme",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.124.0",
     "@axe-core/playwright": "^4.13.0",
