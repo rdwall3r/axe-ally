@@ -1,14 +1,13 @@
 {
   "name": "axe-ally",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Supplementary AI tool for Axe-core accessibility checker.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "prestart": "npm run build",
     "start": "node dist/bin/axe-ally.js",
-    "format": "prettier --write .",
-    "try:lens": "node --env-file=.env lib/screen-reader-lens.ts"
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
